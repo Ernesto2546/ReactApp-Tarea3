@@ -30,7 +30,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'Inicio',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
       />
@@ -39,7 +39,7 @@ export default function TabLayout() {
         name="sumadora"
         options={{
           title: 'Sumadora',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="add" color={color} />,
         }}
       />
 
@@ -47,15 +47,23 @@ export default function TabLayout() {
         name="traductor"
         options={{
           title: 'traductor',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="language" color={color} />,
         }}
       />
 
       <Tabs.Screen
-        name="explore"
+        name="tablaMultiplicar"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Tablas',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="calculate" color={color} />,
+        }}
+      />
+
+      <Tabs.Screen
+        name="experiencia"
+        options={{
+          title: 'Experiencia',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="videocam" color={color} />,
         }}
       />
     </Tabs>
