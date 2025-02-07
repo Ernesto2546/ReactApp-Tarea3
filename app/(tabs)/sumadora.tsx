@@ -12,7 +12,7 @@ const Sumadora: React.FC = () => {
 
   return (
       <View style={styles.container}>
-        <Text>Ingrese dos números:</Text>
+        <Text style={styles.colorText}>Ingrese dos números:</Text>
         <TextInput style={styles.input} keyboardType="numeric" placeholder="Número 1" value={num1} onChangeText={setNum1} />
         <TextInput style={styles.input} keyboardType="numeric" placeholder="Número 2" value={num2} onChangeText={setNum2} />
         <Button title="Sumar" onPress={sumar} />
@@ -35,9 +35,12 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     paddingLeft: 10,
     color: 'white',
+    textAlign: 'center',
   },
   colorText: {
     color: 'white', 
+    textAlign: 'center',
+    margin: 10,
   },
   resultado: {
     color: 'white',
